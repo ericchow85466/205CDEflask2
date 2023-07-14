@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Welcome to Disc shop Express</title>
+</head>
+<body>
+<!--
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<a class="navbar-brand" href="#">DiscShopExpress</a>
+		  </div>
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Page 1</a></li>
+			<li><a href="#">Page 2</a></li>
+			<li><a href="#">Page 3</a></li>
+		  </ul>
+		</div>
+	  </nav>
+	-->	
+	  <div class="container">
+		<h3>Basic Navbar Example</h3>
+		<p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+	  </div>
+
+	<ul>
+		<li>
+			<a href="/home/cde/myproject/venv/index.html">Home</a>
+		</li>
+
+		<li>
+			<a href="/home/cde/myproject/venv/disclist.html">Buy a disc</a>
+		</li>
+
+		<li>
+			<font color="#FF0000" size="4">Register as member(You are here)</font>
+		</li>
+
+	</ul>
+
+
+<br><br>
+<p>
+Name:______________ <br>
+Telephone number:__________<br>
+Email:______________<br>
+Birthday(dd/mm/yyyy):____________<br>
+</p>
+<p> Please copy the above form, fill and send to registeranaccount@discshop.com, or take the registration form in our shop.</p>
+<br><br>
+OR <br>
+Use this
+<br>
+<!--
+<fieldset>
+	<legend>Registeration</legend>
+	{{form.hidden_tag() }}
+
+	<div style=font style:20px; font-weight:bold; margin-left:150px;>
+		{{  form.name.label  }}<br>
+		{{  form.name  }}
+		 {for message in form name.errors %}
+	<span style="color:red">{{ message }}</span>
+	{% endfor %}
+	</div>
+</fieldset>
+-->
+
+<form action="/">
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name"><br>
+	<label for="telno">Telephone Number:</label>
+	<input type="text" id="telno" name="telno"><br>
+	<label for="email">Email:</label>
+	<input type="text" id="email" name="email"><br>
+	<label for="birthday">Birthday(dd/mm/yyyy):</label>
+	<input type="text" id="birthday" name="birthday"><br><br>
+	<input type="submit" value="Submit">
+	
+  </form>
+
+
+  <p>How to do?
+	<ol>
+	  <li>Register an account</li>
+	  <li>Look for what you want to buy</li>
+	  <li>Order Online</li>
+	  <li>Take at the shop in 1-2 working days later.</li>
+	  <li>Enjoy the disc.</li>
+	</ol>
+	</p>
+
+<p>email:<a href="mailto:help@discshop.com">help: help@discshop.com</a></p>
+
+<p>Shop Location: 132 Main Street South, Levan, Greater Quizone<br>
+	  Take Quizone Underground to Levan Station, Exit C and to south, walk 3 minutes.
+	</p>
+  
+  
+</body>
+</html>
